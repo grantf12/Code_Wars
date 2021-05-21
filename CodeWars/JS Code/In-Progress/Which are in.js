@@ -1,7 +1,21 @@
 function inArray(a1, a2) {
   //...
-  return a1;
+  return a1.sort();
 }
+
+describe("Tests", () => {
+    it("test", () => {
+        a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+
+        a1 = ["xyz", "live", "strong"]
+        Test.assertSimilar(inArray(a1, a2), ["live", "strong"])
+        a1 = ["live", "strong", "arp"]
+        Test.assertSimilar(inArray(a1, a2), ["arp", "live", "strong"])
+        a1 = ["tarp", "mice", "bull"]
+        Test.assertSimilar(inArray(a1, a2), [])
+
+    });
+});
 
 // Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of a1 which are substrings of strings of a2.
 
