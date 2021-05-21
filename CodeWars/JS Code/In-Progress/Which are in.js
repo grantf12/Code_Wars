@@ -1,5 +1,5 @@
 function inArray(a1, a2) {
-  //...
+
   return a1.sort();
 }
 
@@ -7,11 +7,13 @@ describe("Tests", () => {
     it("test", () => {
         a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
 
-        a1 = ["xyz", "live", "strong"]
+            a1 = ["xyz", "live", "strong"]
         Test.assertSimilar(inArray(a1, a2), ["live", "strong"])
-        a1 = ["live", "strong", "arp"]
+
+            a1 = ["live", "strong", "arp"]
         Test.assertSimilar(inArray(a1, a2), ["arp", "live", "strong"])
-        a1 = ["tarp", "mice", "bull"]
+
+            a1 = ["tarp", "mice", "bull"]
         Test.assertSimilar(inArray(a1, a2), [])
 
     });
